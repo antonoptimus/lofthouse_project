@@ -324,10 +324,10 @@ a:hover {
   margin-top: 1em;
 }
 
-.form {
+.cta__form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 35px 30px;
 }
 
 .form__input {
@@ -337,6 +337,7 @@ a:hover {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.2);
   font-size: 14px;
+  transition: background-color 0.2s ease-in;
 }
 .form__input::-moz-placeholder {
   color: #bebebe;
@@ -344,12 +345,15 @@ a:hover {
 .form__input::placeholder {
   color: #bebebe;
 }
+.form__input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 .form__privacy {
   font-size: 13px;
   text-align: center;
-  align-self: center;
   color: #E7E7E7;
+  line-height: 1.23;
 }
 
 .form__btn {
@@ -360,4 +364,8 @@ a:hover {
   line-height: 1.7;
   background: #D4C17F;
   color: #fff;
+  transition: background-color 0.2s ease-in;
+}
+.form__btn:hover {
+  background: #ddc676;
 }

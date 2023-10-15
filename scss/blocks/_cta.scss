@@ -29,3 +29,9 @@
       margin-top: 1em;
    }
 }
+
+.cta__form { 
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 35px 30px;
+}
