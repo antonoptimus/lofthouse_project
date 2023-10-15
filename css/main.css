@@ -225,14 +225,14 @@ a:hover {
 }
 .benefits::after {
   content: "II";
-  opacity: 0.02;
-  position: absolute;
-  top: 0;
   left: calc(50% + 555px);
   transform: translate(-50%, 0);
+  position: absolute;
+  top: 0;
   line-height: 1.15;
   font-size: 400px;
   font-family: "Playfair Display", serif;
+  opacity: 0.02;
 }
 
 .benefits__row {

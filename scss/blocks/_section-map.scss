@@ -4,17 +4,12 @@
 
    &::before {
       content: "V";
-      opacity: 0.02;
-
-      position: absolute;
-      z-index: -1;
-      top: 180px;
       right: calc(50% + 555px);
       transform: translate(50%, 0);
+
+      @include decorNumber;
+      top: 180px;
       line-height: 1;
-      
-      font-size: 400px;
-      font-family: $font-accent;
    }
 
 }
