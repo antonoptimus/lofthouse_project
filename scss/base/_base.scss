@@ -21,8 +21,8 @@ a {
    padding: 0 15px;
    max-width: 1140px;
 
-   &-small {
-      min-width: 840px;
+   &--small {
+      max-width: 840px;
    }
 }
 
