@@ -8,7 +8,7 @@
 
       &::before {
          content: "";
-      
+         
          position: absolute;
          left: 0px;
          top: 50%;
@@ -27,5 +27,13 @@
 
    &--tel::before { 
       background-image: url('../../img/icons/phone-call.svg');
+   }
+
+   @include mediaTablet {
+      font-size: 14px;
+
+      &--map, &--tel {
+         padding-left: 30px;
+      }   
    }
 }
