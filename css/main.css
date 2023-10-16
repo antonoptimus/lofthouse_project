@@ -160,6 +160,21 @@ a:hover {
   align-items: center;
 }
 
+@media screen and (max-width: 999px) {
+  .header__nav {
+    display: block;
+  }
+}
+
+.header__nav-btn {
+  display: none;
+}
+@media screen and (max-width: 999px) {
+  .header__nav-btn {
+    display: block;
+  }
+}
+
 .header__title {
   position: relative;
   padding-bottom: 121px;
@@ -229,6 +244,7 @@ a:hover {
   transform: translate(-50%, 0);
   position: absolute;
   top: 0;
+  z-index: -1;
   line-height: 1.15;
   font-size: 400px;
   font-family: "Playfair Display", serif;
@@ -260,14 +276,15 @@ a:hover {
 }
 .apartments::after {
   content: "III";
-  opacity: 0.02;
-  position: absolute;
-  top: 0;
   right: calc(50% + 555px);
   transform: translate(50%, 0);
+  position: absolute;
+  top: 0;
+  z-index: -1;
   line-height: 1.15;
   font-size: 400px;
   font-family: "Playfair Display", serif;
+  opacity: 0.02;
 }
 
 .apartments__title {
@@ -409,14 +426,15 @@ a:hover {
 }
 .video::after {
   content: "IV";
-  opacity: 0.02;
-  position: absolute;
-  top: 0;
   left: calc(50% + 555px);
   transform: translate(-50%, 0%);
+  position: absolute;
+  top: 0;
+  z-index: -1;
   line-height: 1.15;
   font-size: 400px;
   font-family: "Playfair Display", serif;
+  opacity: 0.02;
 }
 
 .video__link {
@@ -457,15 +475,17 @@ a:hover {
 }
 .section-map::before {
   content: "V";
-  opacity: 0.02;
-  position: absolute;
-  z-index: -1;
-  top: 180px;
   right: calc(50% + 555px);
   transform: translate(50%, 0);
-  line-height: 1;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  line-height: 1.15;
   font-size: 400px;
   font-family: "Playfair Display", serif;
+  opacity: 0.02;
+  top: 180px;
+  line-height: 1;
 }
 
 .section-map__title {

@@ -8,3 +8,9 @@
    font-family: $font-accent;
    opacity: 0.02;
 }
+
+@mixin mediaTablet {
+   @media screen and (max-width: $tablet) {
+     @content;
+   }
+ }
