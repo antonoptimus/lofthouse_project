@@ -12,10 +12,18 @@
       line-height: 1;
    }
 
+   @include mediaTablet {
+      padding: 60px 0;
+   }
+
 }
 
 .section-map__title {
    margin-bottom: 88px;
+
+   @include mediaTablet {
+      margin-bottom: 44px;
+   }
 }
 
 .section-map__map {
